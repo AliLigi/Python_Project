@@ -13,9 +13,29 @@ with open('wordList.txt', 'r') as fileopen:
  #  for potential_word  in map(''.join, permutations('aeiourst')):
  #     if potential_word  in words:
  #      print(potential_word)
-			
+		
+# Importing random, then set vowels and consonants
+import random
+anagram = []
+vowels = ['a','e','i','o','u']
+consonant = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','x','z','w','y']
 	
-anagram ="python"
+#anagram ="python"
+
+# 3 loopsthat allow you to choose 3 vowels , 4 constants and 2 random vowels or consonant
+for i in range (0,3):
+    anagram.append(random.choice(vowels))
+for i in range (0,4):
+    anagram.append(random.choice(consonant))
+for i in range (0,2):
+    anagram.append(random.choice(vowels + consonant))
+
+#Importing the shuffle function, which shuffles the anagram/letters that were chosen above  
+from random import shuffle
+shuffle(anagram)
+
+# this prints the anagram on the screen but and does not allow for , to appear in the shuffled words
+print (''.join(anagram))
 
 # This imports the the itertools function permutations which sets out the counter and then lists all the permutations
 # —itertools.permutations()—takes a collection of items and produces a sequence of tuples that rearranges all of the 
@@ -33,10 +53,19 @@ for i in range (0,9):
     j += 1
 #perms = [''.join(p)for p in permutations(anagram)]
 
+#words and permutation convert to sets which allow only unique list
+res = (set(words) & set(permutation))
+
+#orders the words and give the largest word it finds
+sortWord = sorted(res, key=len)
 
 #first prints out the word that is set as the anagram
-print(anagram)
-#then this prints out the permutations 
-print(set(words) & set(permutation))
+#print(anagram)
+
+#then this prints out all the permutations 
+#print(set(words) & set(permutation))
+
+print (sortWord[-1])
+
 # prints out to the console the running time of the program
 print("--- %s seconds ---" % (time.time() - start_time))
