@@ -1,5 +1,3 @@
-#find 9 letter anagram
-
 # timer function to see how long it takes to run this program
 import time
 start_time = time.time()
@@ -7,36 +5,12 @@ start_time = time.time()
 #Get all the words from the file, and form a set using set comprehension
 with open('wordList.txt', 'r') as fileopen:
 	words= [line.strip() for line in fileopen]
-#============================================================================================================	
-#from itertools import permutations
-#with open('wordlist.txt') as f:
-#   words = {line.rstrip('\n').lower() for line in f}
-#  for potential_word  in map(''.join, permutations('aeiourst')):
-#     if potential_word  in words:
-#      print(potential_word)
-#============================================================================================================		
+	
 # Importing random, then set vowels and consonants
 import random
 anagram = []
 vowels = ['a','e','i','o','u']
 consonant = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','x','z','w','y']
-	
-#anagram ="python"
-
-#=============================================================================================================
-#a different way of genetating a random algorithm 
-# randomly creating a shuffled word
-#def genRandomAlgo():
-#	anagram = []
-#	for i in range(0, 9):
-#		if i < 3:
-#			anagram += random.choice(vowels)
-#			if i > 3 & i < 7:
-#				anagram += random.choice(consonants)
-#				if i > 7:
-#					anagram += random.choice(vowels + consonants)
-#	return anagram 
-#=============================================================================================================
 
 # 3 loops that allow you to choose 3 vowels , 4 constants and 2 random vowels or consonant
 for i in range (0,3):
@@ -61,27 +35,6 @@ from itertools import permutations
 j = 0
 permutation = []
 
-#======================================================================================================================
-# another  way to generate the permutations
-#def permutations(letters):
-#   letters = list(letters)
-#    if len(letters) == 1:
-#       yield letters
-#    for letter in set(letters):
-#        letters.remove(letter)
-#        for perm in perms(letters):
-#            yield [letter] + perm
-#        letters.append(letter)
-#Genetating all possible permutations of a word 
-#def genPerms(word):
-#    allPermuts = []
-    
-#    for i in range(1, 10):
-#        allPermuts += permutations(word, i)
-           
-#    return allPermuts
-#========================================================================================================================
-
 # This looops 9 times because this is the max we will always have
 # Finding all possible permutations of a given string
 # Join permuted letters /words
@@ -95,12 +48,6 @@ res = (set(words) & set(permutation))
 
 #orders the words and give the largest word it finds
 sortWord = sorted(res, key=len)
-
-#first prints out the word that is set as the anagram
-print(anagram)
-
-#then this prints out all the permutations 
-print(set(words) & set(permutation))
 
 #prints the longest word it finds in the list of words
 print (sortWord[-1])
