@@ -1,12 +1,16 @@
 #find 9 letter anagram
+# word list/ word list --https://github.com/dwyl/english-words
 
 # timer function to see how long it takes to run this program
 import time
 start_time = time.time()
 
 #Get all the words from the file, and form a set using set comprehension
-with open('wordList.txt', 'r') as fileopen:
+with open('wordlist.txt', 'r') as fileopen:
 	words= [line.strip() for line in fileopen]
+
+#Converting to words lowerCase	
+words = [item.lower() for item in words]
 #============================================================================================================	
 #from itertools import permutations
 #with open('wordlist.txt') as f:
@@ -39,6 +43,8 @@ consonant = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v'
 #=============================================================================================================
 
 # 3 loops that allow you to choose 3 vowels , 4 constants and 2 random vowels or consonant
+# randomly generates a suffle of 3 vowels , 4 constants and 2 random vowels or consonant and then it solves it, it finds all the possible words and then sorts the word and gives the largest word found.
+
 for i in range (0,3):
     anagram.append(random.choice(vowels))
 for i in range (0,4):
