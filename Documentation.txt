@@ -1,4 +1,4 @@
-Alina Danci 
+﻿Alina Danci 
 G00302444@gmit.ie
 https://github.com/AliLigi/Python_Project
 
@@ -11,6 +11,8 @@ https://docs.python.org/2/library/itertools.html
 https://pymotw.com/2/itertools/
 http://stackoverflow.com/questions/7370801/measure-time-elapsed-in-python
 http://www.endmemo.com/python/lowercase.php
+http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/
+https://github.com/dwyl/english-words
 
 Documentation
 
