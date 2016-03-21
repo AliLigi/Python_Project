@@ -1,3 +1,7 @@
+#Alina Danci 
+#G00302444@gmit.ie
+#Countdown algo
+
 # timer function to see how long it takes to run this program
 import time
 start_time = time.time()

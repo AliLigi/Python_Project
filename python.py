@@ -1,3 +1,6 @@
+#Alina Danci 
+#G00302444@gmit.ie
+
 #find 9 letter anagram
 # word list/ word list --https://github.com/dwyl/english-words
 
