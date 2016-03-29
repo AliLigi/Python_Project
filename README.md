@@ -18,7 +18,11 @@ The other python script contains my final attempt at the project.
 I used the ittertools import this makes the project more efficient overall, It saves more memory.
 
 ####Results:
-My script is not the fastest but it is efficient and meets the requirements. 
+My script is not the fastest but it is efficient and meets the requirements.
+Runs the game in over one second.
+Shows the randomly suffled word,
+Shows the longest word that it found in the dictionary created from that shuffled word.
+![Alt text](http://i.imgur.com/vjURkNt.jpg?1 "Countdown Game")
 
 #####Resources:
 http://codereview.stackexchange.com/questions/97274/print-permutations-in-an-iterative-way
