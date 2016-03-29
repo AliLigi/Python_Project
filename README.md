@@ -19,3 +19,15 @@ I used the ittertools import this makes the project more efficient overall, It s
 
 ####Results:
 My script is not the fastest but it is efficient and meets the requirements. 
+
+#####Resources:
+http://codereview.stackexchange.com/questions/97274/print-permutations-in-an-iterative-way
+https://en.wikipedia.org/wiki/Countdown_(game_show)
+https://en.wikipedia.org/wiki/Heap%27s_algorithm
+https://docs.python.org/2/library/itertools.html
+https://pymotw.com/2/itertools/
+http://stackoverflow.com/questions/7370801/measure-time-elapsed-in-python
+http://www.endmemo.com/python/lowercase.php
+http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/
+https://github.com/dwyl/english-words
+
